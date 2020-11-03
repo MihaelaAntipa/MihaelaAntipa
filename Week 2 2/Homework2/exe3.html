@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Forms Exe 3</title>
+    </head>
+
+    <body>
+        <h1>HTML Exercitii Pagina 3</h1>
+        <h2>Search form</h2>
+        
+        <form>
+            <label>Search for:</label><br>
+                <input type="search" name="googlesearch" id="googlesearch" placeholder="Search on Google">
+                <button type="button">Search</button><br>
+
+            <label>Match:</label>
+                <input type="radio" name="match" id="match" value="any_word">Any word
+                <input type="radio" name="match" id="match" value="all_words" checked>All words
+                <input type="radio" name="match" id="match" value="exact_phrase">Exact phrase<br>
+                <input type="checkbox" name="matching" id="matching" value="matching" checked>Sound-alike matching<br>
+
+            <label>Dated:</label>
+                <input type="radio" name="dated" id="dated" value="last_year">
+                <input type="date" name="last_year" min="2019-01-01" placeholder="Within the last year">Within last year<br>
+                <input type="radio" name="dated" id="dated" value="period"><label>From:</label>
+                <input type="date" name="from" id="from"><br>
+                <label>To:</label><input type="date" name="to" id="from"><br>
+
+            <label>Within:</label>
+                <select name="description" id="description">
+                    <option value="description" selected="selected">Description</option>
+                    <option value="price">Price</option>
+                    <option value="reviews">Reviews</option>
+                </select><br>
+
+            <label>Show:</label>
+                <select name="show" id="show">
+                    <option value="10" selected="selected">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+
+            <label>results</label>
+                <select name="results" id="results">
+                    <option value="with" selected="selected">with</option>
+                    <option value="without">without</option>
+                </select><label>summaries</label><br>
+            
+            <label>Sort by</label>
+                <select name="sort" id="sort">
+                    <option value="relevance" selected="selected">relevance</option>
+                    <option value="price">price</option>
+                    <option value="date">date</option>
+                
+        </form>
+
+        <br><br>
+            <a href="index.html" target="_blank">link catre Exercitiul 1</a><br>
+            <a href="exe2.html" target="_blank">link catre Exercitiul 2</a><br>
+            <a href="exe4.html" target="_blank">link catre Exercitiul 4</a>
+    </body>
+</html>

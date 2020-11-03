@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Forms Exe 2</title>
+    </head>
+
+    <body>
+        <h1>HTML Exercitii Pagina 2</h1>
+        <h2>Travel reservation form</h2>
+        <h3>* denotes mandatory</h3>
+
+        <form>
+            <label>Full name*:</label><br>
+                <input type="text" name="full_name" id="full_name" placeholder="FirstName LastName" required><br>
+
+            <label>Email address*:</label><br>
+                <input type="text" name="email" id="email" placeholder="EMAIL_ADDRESS" required><br>
+
+            <label>Select Tour Package*:</label><br>
+                <select name="tour_package" id="tour_package" required>
+                    <option value="seasonal" selected="selected">Seasonal</option>
+                    <option value="circuit">Circuit</option>
+                    <option value="cruise">Cruise</option>
+                    <option value="events">Events</option>
+                </select><br>
+
+            <label>Arrival date*:</label><br>
+                <input type="date" name="arrival_date" id="arrival_date" required><br>
+                <!--sau pentru a arata exact ca in pdf:-->
+                <input type="text" name="arrival date" id="arrival_date" placeholder="m/d/y" required><br>
+
+            <label>Number of persons*:</label><br>
+                <input type="number" placeholder="UNKNOWN_TYPE" required>
+
+            <label>What would you want to avail?*:</label><br>
+                <input type="checkbox" name="avail1" id="avail1" value="Boarding">Boarding<br>
+                <input type="checkbox" name="avail2" id="avail2" value="Fooding">Fooding<br>
+                <input type="checkbox" name="avail3" id="avail3" value="Sight_seeing">Sight seeing<br>
+
+            <label>Discount Coupon code:</label><br>
+                <input type="text" name="discount" id="discount" placeholder="UNKNOWN_TYPE"><br>
+
+            <label>Terms and conditions*</label><br>
+                <input type="radio" name="agreement" id="agreement" value="agree" checked>I agree
+                <input type="radio" name="agreement" id="agreement" value="disagree">I disagree<br>
+                
+            <button type="button">Complete reservation</button><br>
+        </form>
+
+        <br><br>
+            <a href="index.html" target="_blank">link catre Exercitiul 1</a><br>
+            <a href="exe3.html" target="_blank">link catre Exercitiul 3</a><br>
+            <a href="exe4.html" target="_blank">link catre Exercitiul 4</a>
+    </body>
+</html>

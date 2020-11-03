@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Forms Homework 2</title>
+    </head>
+
+    <body>
+        <h1>HTML Exercitii Pagina 1</h1>
+        <br>
+             <!--Creati un formular HTML care sa includa urmatoarele campuri: Nume, Prenume, Sex, Varsta, Tara, Oras, Adresa, Cod postal, E-mail, Mesaj, Atasare CV, Buton de trimitere si Buton de resetare. Numele, prenumele si e-mail-ul sunt campuri obligatorii. Varsta trebuie sa fie cuprinsa intre 18 si 85 de ani. Setati o valoare initiala pentru cel putin 3 dintre campuri-->
+
+        <form>
+            <label>* Required fields</label><br><br>
+            <label>Nume*:</label>
+                <input type="text" name="nume" id="nume" placeholder="Nume" required><br><br>
+            <label>Prenume*:</label>
+                <input type="text" name="prenume" id="prenume" placeholder="Prenume" required><br><br>
+            <label>Sex:</label>
+                <select name="sex" id="sex">
+                    <option value="feminin">Feminin</option>
+                    <option value="masculin" selected="selected">Masculin</option>
+                </select><br><br>
+            <label>Varsta:</label>
+                <input type="varsta" min="18" max="85" value="18"><br><br>
+            <label>Tara:</label>
+                <input type="text" name="tara" id="tara" placeholder="Tara"><br><br>
+            <label>Oras:</label>
+                <input type="text" name="oras" id="oras" placeholder="Oras"><br><br>
+            <label>Adresa:</label><br>
+                <textarea name="adresa" id="adresa" rows="2" cols="50" placeholder="Adresa"></textarea><br><br>
+            <label>Cod postal:</label>
+                <input type="text" name="zip" pattern="[0-9]{6}" min="000000" max="999999" title="Cod postal din 6 cifre" value="000000"><br><br>
+            <label>E-mail*:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required><br><br>
+            <label>Mesaj:</label><br>
+                <textarea name="mesaj" id="mesaj" rows="8" cols="50" placeholder="Scrieti un mesaj"></textarea><br><br>
+            <label>Atasati CV:</label>
+                <input type="file" name="cv" id="cv"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+
+        <br><br>
+        <a href="exe2.html" target="_blank">link catre Exercitiul 2</a><br>
+        <a href="exe3.html" target="_blank">link catre Exercitiul 3</a><br>
+        <a href="exe4.html" target="_blank">link catre Exercitiul 4</a>
+    
+    </body>
+</html>
