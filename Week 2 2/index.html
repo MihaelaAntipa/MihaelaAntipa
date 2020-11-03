@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta lang="en">
+        <title>HTML forms</title>
+    </head>
+
+    <body>
+        <p>Pizza Order</p>
+        <form action="/action_page.php">
+            <label for="your_name">Your name: *</label>
+                <input type="text" name="nume" id="name" placeholder="Nume" minlength="3" maxlength="10" required><br><br>
+
+            <label for="your_email">Your email: *</label>
+                <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+
+            <label for="topping">Topping:</label>
+                <input type="radio" name="topping" value="Supreme">
+                <label for="supreme">Supreme</label>
+                <input type="radio" name="topping" value="Vegetarian">  
+                <label for="vegetarian">Vegetarian</label>
+                <input type="radio" name="topping" value="Hawaian">
+                <label for="hawaian">Hawaian</label> <br> <br>
+
+            <label for="sauce">Sauce:</label>
+                <select name="sauce">
+                    <option value="iute">Iute</option>
+                    <option value="dulce">Dulce</option>
+                    <option value="maioneza">Maioneza</option>
+                    <option value="usturoi">Usturoi</option>
+                    <option value="faraSos" selected="selected">Fara sos</option>
+                </select><br><br>      
+                        
+            <label for="extras">Extras:</label> 
+                <input type="checkbox" name="extras1" value="cheese">Cheese
+                <input type="checkbox" name="extras2" value="onions">Onions
+                <input type="checkbox" name="extras3" value="olives">Olives
+                <br><br>
+
+            <label for="numar">Numar:</label>
+                <input type="number" min="1" max="7" value="1">
+                <br><br>
+
+            <label for="delivery_instructions">Delivery instructions: *</label><br>
+                <textarea name="mesaj" rows="10" cols="50" required></textarea><br><br>
+
+            <label for="data_livrare">Data livrare</label>
+                <input type="date" name="data_livrare" id="data_livrare">
+                <br><br>
+            
+            <input type="submit" value="Send order">
+            <input type="reset" value="Reset">
+            <br>
+            <br>
+            <label>
+                * requiered fields
+            </label>
+
+        </form>
+    </body>
+</html>
