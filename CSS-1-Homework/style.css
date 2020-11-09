@@ -1,0 +1,13 @@
+/* CSS1 - Homework - Exercitiul 1 - Article*/
+
+h1::first-letter {
+    text-transform: uppercase;
+}
+
+article>p{
+    width: 30%;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
