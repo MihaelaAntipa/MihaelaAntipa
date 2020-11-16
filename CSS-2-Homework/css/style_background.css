@@ -1,0 +1,10 @@
+img {
+    border: 10px dotted red;
+    padding: 15px;
+    background: white;
+    background-clip: padding-box;
+}
+
+.linkuri {
+    margin-top: 200px;
+}

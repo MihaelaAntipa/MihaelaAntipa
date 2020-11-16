@@ -1,0 +1,44 @@
+.container {
+    border-top: 3px solid rgb(21, 192, 164);
+    border-left: 3px solid rgb(21, 192, 164);
+    border-right: 3px solid rgb(21, 192, 164);
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    color:rgb(216, 64, 153);
+    border: 3px solid rgb(216, 64, 153);
+    width: 147px;
+    position: absolute;
+}
+
+.sectiuni {
+    margin-left: 153px;
+    position: relative;
+}
+
+section {
+    border: 3px solid  rgb(245, 193, 81);
+    padding-left: 10px;
+}
+
+#text{
+    color: rgb(146, 36, 139)
+}
+
+footer {
+    border-top: 3px solid rgb(110, 179, 7);
+    border-left: 3px solid rgb(110, 179, 7);
+    border-right: 3px solid rgb(110, 179, 7);
+    text-align: center;
+    height: 100px;
+}
+
+.linkuri {
+    margin-top: 200px;
+}
+
+
+

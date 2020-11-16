@@ -1,0 +1,45 @@
+.container {
+    border-top: 3px solid rgb(21, 192, 164);
+    border-left: 3px solid rgb(21, 192, 164);
+    border-right: 3px solid rgb(21, 192, 164);
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    color:rgb(216, 64, 153);
+    border: 3px solid rgb(216, 64, 153);
+    width: 10%;
+    display: inline;
+    float: left;
+}
+
+.sectiuni {
+    width: 89.5%;
+    display: inline;
+    float: right;
+}
+
+section {
+    border: 3px solid  rgb(245, 193, 81);
+    padding-left: 10px;
+}
+
+#text{
+    color: rgb(146, 36, 139)
+}
+
+footer {
+    clear: both;
+    border-top: 3px solid rgb(110, 179, 7);
+    border-left: 3px solid rgb(110, 179, 7);
+    border-right: 3px solid rgb(110, 179, 7);
+    text-align: center;
+    height: 100px;
+    display: block;
+}
+
+.linkuri {
+    margin-top: 200px;
+}
