@@ -1,0 +1,85 @@
+body {
+    background-color: #ebe0b2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+} 
+
+.height70px {
+    height: 70px;
+    background-color: rgb(9, 138, 95);
+}
+
+main {
+    background-color: rgba(9, 138, 95, 0.3);
+}
+
+.container {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+img {
+    height: 100%;
+}
+
+.block {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 150px) and (max-width : 820px) {
+        body {
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .block {
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .block:last-child {
+            margin-bottom: 0;
+        }
+
+        .height70px {
+            height: 70px;
+            background-color: rgb(9, 138, 95);
+        }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+       
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+

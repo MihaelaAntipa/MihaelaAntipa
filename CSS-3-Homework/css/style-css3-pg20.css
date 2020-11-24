@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.gap {
+    height: 100px;
+    border-bottom: 5px solid black;
+    text-align: center;
+}
+
+.c {
+    background-color: red;
+}
+
+.d {
+    background-color: blue ;
+}
+
+.g {
+    background-color: yellow;
+    border-bottom: none;
+}
+
+.linkuri {
+   margin-top: 20px; 
+}

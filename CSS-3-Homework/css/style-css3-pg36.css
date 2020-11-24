@@ -1,0 +1,95 @@
+.container {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagini {
+    width: 1280px;
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 150px;
+    margin-right: 0;
+}
+
+.title_bar {
+    position: absolute;
+    height: 180px;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(88, 86, 90, 0.5);
+}
+
+img {
+    width: 100%;
+}  
+
+p{
+    font-family: Aller, Arial, Helvetica, sans-serif;
+    font-size: 50pt;
+    color: white;
+    margin-left: 50px;
+    margin-top: 45px;
+    font-stretch: expanded;
+  
+}
+
+/*
+.linkuri {
+   margin-top: 30px;
+}
+*/
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 150px) and (max-width : 800px) {
+        .container {
+            width: auto;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .imagini {
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .title_bar {
+            height: auto;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+
+        p{
+            font-size: 25pt;
+            margin-top: 20px;
+        }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+       
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
