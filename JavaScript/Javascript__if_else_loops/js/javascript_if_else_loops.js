@@ -183,4 +183,135 @@ function greatestNrBetween (number1, number2) {
   }
   
   console.log(myBookElementsWithWhile(myBook));
+
+
+// Exercitiile din curs - Practice
+
+// 1. Calculati media aritmetica a unui array de numere
+
+var numbersInArray = [10, 2, 15, 0, 17, 103, 24]
+var sumNumbers = 0;
+
+function arithmeticMean(array) {
+  for (var i=0; i < numbersInArray.length; i++) {
+   sumNumbers += numbersInArray[i];
+  }
+  console.log("Sunt " + numbersInArray.length + " numere in array, iar suma lor este " + sumNumbers)
+  return sumNumbers/numbersInArray.length
+}
+console.log("Media aritmetica a numerelor din array este " + arithmeticMean(numbersInArray));
+
+
+// 2. Avand un array cu numere, valori boolene, obiecte si stringuri, calculati suma numerelor. 
+// Ignorati toate valorile care nu sunt de tip numar.
+
+var arrayDiverseElements = [25, 7, true, person = {firstNameDiv: "Andrei", lastNameDiv: "Lupu", age: 30}, "copywriter", 10];
+var sumRandomDiverse = 0;
+
+function sumNumbersFromArray (array) {
   
+  for (var i = 0; i < array.length; i++) {
+    
+    if (typeof(array[i]) !== "number") {
+        console.log("Elementul cu indexul " + i + " care nu este numar, este = " + array[i]);
+        continue;
+    }
+    // Nu am gasit daca pot / cum sa accesez si numarul 30 din interiorul obiectului. O sa mai caut sa ma lamuresc
+      
+      console.log("Elementul cu indexul " + i + " care este numar, este = " + array[i]); 
+      sumRandomDiverse += array[i];
+   
+  }
+   return sumRandomDiverse;
+}
+
+console.log(sumNumbersFromArray(arrayDiverseElements));
+
+
+// 3. Creati un program care afiseaza primele 20 de numere din sirul lui Fibonacci.
+
+var fibonacciArray = [0, 1];
+
+function addToFibonacciArray(array) {
+  for (i=0; i < 18; i++) {
+    
+    var nextNumber = array[i] + array[i+1];
+    fibonacciArray.push(nextNumber);
+  }
+  
+  return fibonacciArray;
+}
+
+console.log(addToFibonacciArray(fibonacciArray));
+
+
+// 4. Creati un program cu care tineti evidenta cartilor citite si cartilor pe care doriti sa le cititi in viitor.
+    // a. creati un array cu mai multe obiecte. Fiecare obiect reprezinta o carte si are proprietati pentru titlu, autor si daca aceasta carte este citita sau nu
+    // b. iterati prin aceasta colectie de carti si afisati la consola titlul si autorul fiecarei carti. De exemplu pentru “The Hobbit” a lui J.R.R. Tolkien ar trebui sa afisati “The Hobbit by J.R.R Tolkien”
+    // c. modificati programul astfel incat sa se afiseze si daca o carte a fost citita sau nu
+
+    var myLibrary = [
+      {
+        title: "1984",
+        author: "George Orwell",
+        read: "false"
+      },
+      
+      {
+        title: "Jane Eyre",
+        author: "Charlotte Bronte",
+        read: "true"
+      },
+        
+      {
+        title: "Childhood's End",
+        author: "Arthur C. Clarke",
+        read: "true"
+      },
+    
+      {
+        title: "Great Expectations",
+        author: "Charles Dickens",
+        read: "false"
+      },
+    
+      {
+        title: "East of Eden",
+        author: "John Steinbeck",
+        read: "true"
+      }
+    ];
+    console.log("---------------------------------------------")
+    
+    console.log("The books in my library are:")
+    for (i=0; i<myLibrary.length; i++) {
+        console.log(myLibrary[i].title + " by " + myLibrary[i].author);
+      }
+    console.log("---------------------------------------------")
+    console.log("The books in my library:")
+    for (i=0; i<myLibrary.length; i++) {
+        if (myLibrary[i].read === "true") {
+           console.log(myLibrary[i].title + " by " + myLibrary[i].author + " - I had read it");
+        }
+        else
+          {
+            console.log(myLibrary[i].title + " by " + myLibrary[i].author + " - I have to read it");
+          }
+      }
+    
+    console.log("---------------------------------------------")
+    
+    console.log("The books from my library that I've read are:")
+    for (i=0; i<myLibrary.length; i++) {
+        if (myLibrary[i].read === "true") {
+           console.log(myLibrary[i].title + " by " + myLibrary[i].author);
+        }
+      }
+    console.log("---------------------------------------------")
+    
+    console.log("The books from my library that I have to read next are:")
+    for (i=0; i<myLibrary.length; i++) {
+        if (myLibrary[i].read === "false") {
+           console.log(myLibrary[i].title + " by " + myLibrary[i].author);
+        }
+      } 
