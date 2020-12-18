@@ -78,9 +78,6 @@ const replaceLetters = stringForLettersToBeReplaced => {
   
   for (let i = 0; i<stringForLettersToBeReplaced.length; i++) {
    
-    // partea aceasta nu functioneaza si inca nu imi dau seama de ce
-    
-
     if (stringForLettersToBeReplaced[i] === "z") {
       replacedLettersString += "a";
       continue;
