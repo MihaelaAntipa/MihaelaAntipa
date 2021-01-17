@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="student" content="Mihaela ANTIPA">
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <title>Homework - FORM</title>
+    </head>
+
+    <body >
+        <form action="">
+            <div class="form">
+                <h1>Get your own Site <br> 42 Sites account in seconds</h1>
+
+                <div>
+                    <label for="username" class="labels">USERNAME:</label><br>
+                    <div class="error" id="error_user"><label class="error_text">Please enter a username.</label></div><br>
+                    <input type="text" class="text_box" id="username" required><br>
+                    <p>(Must be at least 4 characters, letters and numbers only.)</p><br>
+                </div>
+
+
+                <div>
+                    <label for="email_address" class="labels">EMAIL ADDRESS:</label><br>
+                    <div class="error" id="error_email"><label class="error_text">Please enter a valid email address.</label></div><br>
+                    <input type="email" class="text_box" id="email" required><br>
+                    <p>We send your registration email to this address. <br> (Double-check your email address before continuing.)</p><br>
+                </div>
+
+
+                <div>
+                    <label for="first_name" class="labels">FIRST NAME:</label><br>
+                    <div class="error" id="error_first"><label class="error_text">Please enter a First Name.</label></div><br>
+                    <input type="text" class="text_box" id="first" required><br>
+                    <p>(Must be input.)</p><br>
+                </div>
+
+
+                <div>
+                    <label for="last_name" class="labels">LAST NAME:</label><br>
+                    <div class="error" id="error_last"><label class="error_text">Please enter a Last Name.</label></div><br>
+                    <input type="text" class="text_box" id="last" required><br>
+                    <p>(Must be input.)</p><br>
+                </div>
+
+
+                <div>
+                    <label for="nickname" class="labels">NICKNAME:</label><br>
+                    <input type="text" class="text_box" id="nick"><br>
+                </div>
+
+
+                <div>
+                    <label for="phone" class="labels" id="phone_label">PHONE:</label><br>
+                    <div class="error" id="error_phone"><label class="error_text">Please enter a Phone.</label></div><br>
+                    <input type="number" class="text_box" id="phone" required><br>
+                    <p>(Must be at least 10 characters, numbers only.)</p><br>
+                </div>
+
+
+                <div>
+                    <label class="labels">
+                        <input type="radio" name="radio_btn" checked>GIMME A SITE!
+                    </label><br>
+
+                    <label class="labels">
+                        <input type="radio" name="radio_btn">JUST A USERNAME, PLEASE.
+                    </label><br>
+                    
+                </div>
+
+                
+                <input type="submit" value="NEXT" id="submit_next" id="next">
+
+            </div>
+        </form>
+
+        <script type="text/javascript" src="JS/indexJSform.js"></script>
+    </body>
+</html>

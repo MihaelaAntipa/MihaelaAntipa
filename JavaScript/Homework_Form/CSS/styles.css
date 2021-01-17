@@ -1,0 +1,73 @@
+.form {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+}
+
+.labels {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(97, 92, 92);
+    margin-top: 20px;
+}
+
+.text_box {
+    height: 30px;
+    width: 400px;
+    background-color: lightgray;
+    color: rgb(97, 92, 92);
+    border: rgb(148, 144, 144) 1px solid;
+}
+
+.error {
+    height: 40px;
+    width: 404px;
+    margin-top: 15px;
+    background-color: rgb(240, 216, 216);
+    border: rgb(112, 9, 9) 1px solid;
+    padding-top: 15px;
+    display: none;
+}
+
+.error > .error_text {
+    color: rgb(68, 63, 63);
+    font-weight: 600;
+    position: relative;
+    margin-left: 15px;
+    padding-top: 10px;
+    
+}
+
+p {
+    margin-top: 3px;
+    color: rgb(97, 92, 92);
+}
+
+#nick {
+    margin-bottom: 30px;
+}
+
+#user {
+    font-size: 40px;
+}
+
+#submit_next {
+    width: 406px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(39, 37, 37);
+    color: whitesmoke;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
